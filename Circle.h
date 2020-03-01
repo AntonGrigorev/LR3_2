@@ -8,9 +8,8 @@ protected:
 public:
 	Circle(double r);
 	Circle();
-	virtual double area(double r);
-	virtual void printr();
-	void printarea();
+	virtual double area();
+	virtual void print();
 };
 
 #endif

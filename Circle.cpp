@@ -10,15 +10,13 @@ Circle::Circle(double r) {
 	radius = r;
 }
 
-double Circle::area(double r) {
+double Circle::area() {
 	double s;
-	s = 3, 14 * r * r;
+	s = 3.14 * radius * radius;
 	return s;
 }
 
- void Circle::printr() {
-	cout << "Radius =" << radius;
+ void Circle::print() {
+	 cout << "Radius = " << radius << endl;
+	 cout << "Area = " << area();
 }
- void Circle::printarea() {
-	 cout << "Area=" << area;
- }

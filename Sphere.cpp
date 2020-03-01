@@ -4,16 +4,13 @@ Sphere:: Sphere(double r) :
 	Circle(r) {
 	}
 
-void Sphere :: printr() {
-	Circle :: printr();
+void Sphere::print() {
+	cout << "Radius = " << radius << endl;
+	cout << "Volume = " << area();
 }
 
-void Sphere::printvol() {
-	cout << "Volume=" << area;
-}
-
-double Sphere::area(double r) {
+double Sphere::area() {
 	double v;
-	v = 4 * 3, 14 * r * r * r / 3;
+	v = 4 * 3.14 * radius * radius * radius / 3;
 	return v;
 }

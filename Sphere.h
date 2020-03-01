@@ -6,14 +6,10 @@ using namespace std;
 
 class Sphere: public Circle
 {
-	public:
-Sphere(double r) : Circle(r);
-
-void printr();
-
-void printvol();
-
-double area(double r);
+public:
+	Sphere(double r);
+	void print();
+	double area();
 };
 
 #endif
