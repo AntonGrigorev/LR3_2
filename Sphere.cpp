@@ -11,6 +11,6 @@ void Sphere::print() {
 
 double Sphere::area() {
 	double v;
-	v = 4 * 3.14 * radius * radius * radius / 3;
+	v = 4 * Circle::area() * radius / 3;
 	return v;
 }

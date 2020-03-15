@@ -1,4 +1,6 @@
 #include "Circle.h"
+#define _USE_MATH_DEFINES 
+#include <cmath>
 #include <iostream>
 using namespace std;
 
@@ -12,7 +14,7 @@ Circle::Circle(double r) {
 
 double Circle::area() {
 	double s;
-	s = 3.14 * radius * radius;
+	s = M_PI * radius * radius;
 	return s;
 }
 
